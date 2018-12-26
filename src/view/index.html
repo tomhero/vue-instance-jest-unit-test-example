@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vue test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- include polyfill -->
+    <script src="../../node_modules/@babel/polyfill/dist/polyfill.min.js"></script>
+    <!-- include vue js -->
+    <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+    <section class="main-app" style="margin: 10em auto; width: 1000px;">
+        <div id="app">
+            <span class="number">{{ number }}</span>
+            <button id="add-btn" @click="add">Plus</button>
+            <button id="minus-btn" @click="minus">Minus</button>
+            <button id="power-btn" @click="power">Power</button>
+        </div>
+    </section>
+</body>
+<!-- include vue instances -->
+<script src="../script/myapp.js"></script>
+
+</html>
